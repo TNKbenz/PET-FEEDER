@@ -103,11 +103,12 @@ void linenotify() {
 void loop()
 {
   printtime();
-  if((timeClient.getHours() == 7 && timeClient.getMinutes() == 30) || (timeClient.getHours() == 17 && timeClient.getMinutes() == 30) ){
-    servo();
-    linenotify();
-    delay(60000);
-    }
+//  rts set 
+//   if((timeClient.getHours() == 7 && timeClient.getMinutes() == 30) || (timeClient.getHours() == 17 && timeClient.getMinutes() == 30) ){
+//     servo();
+//     linenotify();
+//     delay(60000);
+//     }
   Blynk.run();
 
 }
